@@ -8,6 +8,7 @@ import tensorflow as tf
 
 parser = ap.ArgumentParser()
 parser.add_argument('--batch_size', default = 100, type = int, help = 'batch_size')
+# 训练步数
 parser.add_argument('--train_steps', default = 1000, type = int, help = 'number of training steps')
 
 def main(argv):
