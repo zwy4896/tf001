@@ -24,10 +24,8 @@ def main(argv):
                                             n_classes=3)
 
     # train the model
-    classifier.train(input_fn = lambda:tf001.train_input_fn(train_x, train_y, args.batch_size))
-    # 训练步数
-    steps = args.train_steps
-
+    classifier.train(input_fn = lambda:tf001.train_input_fn(train_x, train_y, args.batch_size), steps = args.train_steps)
+    
     # Evaluate
     eval_result = classifier.evaluate(input_fn = lambda:tf001.evel_input_fn(test_x, test_y, args.batch_size))
 
