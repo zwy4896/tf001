@@ -22,7 +22,8 @@ def main(argv):
     # 2 hidden layer DNN
     classifier = tf.estimator.DNNClassifier(feature_columns = my_feature_columns,
                                             hidden_units = [10, 10],
-                                            n_classes=3)
+                                            n_classes=3,
+                                            model_dir='./models/tf001')
 
     # train the model
     classifier.train(input_fn = lambda:tf001.train_input_fn(train_x, train_y, args.batch_size), steps = args.train_steps)
