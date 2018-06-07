@@ -2,7 +2,7 @@ import pandas as pd
 import tensorflow as tf
 
 # 训练集和测试集合url 
-TRAIN_URL = "htp://download.tensorflow.org/data/iris_training.csv"
+TRAIN_URL = "http://download.tensorflow.org/data/iris_training.csv"
 TEST_URL = "http://download.tensorflow.org/data/iris_test.csv"
 
 # 定义x值，sepal length, petal length…………
